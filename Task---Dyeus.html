@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task---Dyeus</title>
+	<style type="text/css">
+
+		body{
+			
+			background: #08090C;
+		}
+		
+		
+		#option{
+			position: relative;
+			
+			border-radius: 0px;
+
+		}
+		#cart{
+			position: absolute;
+			top: 10px;
+    		right: 10px;
+    		
+			border-radius: 0px;
+
+		}
+		#ratings{
+			position: relative;
+			width: 140px;
+			height: 15px;
+			left: 30px;
+			top: 230px;
+		}
+		#nav{
+			border-bottom: 1px solid #585858;
+		}
+		#imgmain{
+			position: relative;
+			width: 315px;
+			height: 407px;
+			left: 30px;
+			top: 50px;
+		}
+		.a {
+
+			position: absolute;
+			width: 313px;
+			height: 88px;
+			left: 38px;
+			top: 500px;
+
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 32px;
+			line-height: 136.2%;
+
+			/* or 44px */
+
+			color: #FFFFFF;
+
+
+		}
+		.b{
+
+
+			position: absolute;
+			width: 311px;
+			height: 69px;
+			left: 39px;
+			top: 615px;
+
+			font-family: Belgrano;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 193.7%;
+
+			/* or 23px */
+
+			color: #C4CACF;
+		}
+		.c1{
+			position: absolute;
+			width: 85px;
+			height: 39px;
+			left: 39px;
+			top: 710px;
+
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 32px;
+			line-height: 39px;
+
+			/* identical to box height */
+
+			color: #FFFFFF;
+		}
+		.c2{
+			position: absolute;
+			width: 94px;
+			height: 39px;
+			left: 149px;
+			top: 710px;
+
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 39px;
+
+			/* identical to box height */
+			text-decoration-line: line-through;
+
+			color: #3C464F;
+
+		}
+		.card1{
+			position: absolute;
+			width: 306px;
+			height: 124px;
+			left: 22px;
+			top: 780px;
+
+			background: #21272C;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  			
+		}
+		
+		.mp{
+			position: absolute;
+			width: 80px;
+			height: 13px;
+			left: 22px;
+			top: 15px;
+
+			background: #067BD8;
+			border-radius: 8px;
+		}
+		.mptext{
+			position: absolute;
+			width: 45px;
+			height: 13px;
+			left: 17px;
+			top: -3px;
+
+			font-family: Poppins;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 8px;
+			line-height: 223.7%;
+
+			/* or 13px */
+
+			color: #FFFFFF;
+
+
+		}
+		
+		#star1{
+			position: absolute;
+			width: 5.56px;
+			height: 5px;
+			left: 8px;
+			top: 4px;
+		}
+		#star2{
+			position: absolute;
+			width: 5.56px;
+			height: 5px;
+			left: 64px;
+			top: 4px;
+		}
+		.container1{
+
+
+			position: absolute;
+			width: 208px;
+			height: 22px;
+			left: 22px;
+			top: 20px;
+
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 136.2%;
+
+			/* identical to box height, or 22px */
+
+			color: #FFFFFF;
+		}
+		.container2{
+			position: absolute;
+			width: 206px;
+			height: 23px;
+			left: 22px;
+			top: 50px;
+
+			font-family: Belgrano;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 193.7%;
+
+			/* or 23px */
+
+			color: #465D68;
+		}
+		.container3{
+			position: absolute;
+			width: 64px;
+			height: 16px;
+			left: 22px;
+			top: 80px;
+
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 136.2%;
+
+			/* or 16px */
+
+			color: #24DB6D;
+		}
+		.container4{
+			position: absolute;
+			width: 72px;
+			height: 16px;
+			left: 112px;
+			top: 80px;
+
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 136.2%;
+
+			/* or 16px */
+
+			color: #DB9D24;
+		}
+		.container5{
+			position: absolute;
+			width: 42px;
+			height: 43px;
+			left: 250px;
+			top: 23px;
+
+			font-family: DM Serif Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 223.7%;
+
+			/* identical to box height, or 43px */
+			text-align: right;
+
+			color: #FFFFFF;
+		}
+		.container6{
+			position: absolute;
+			width: 41px;
+			height: 43px;
+			left: 250px;
+			top: 50px;
+
+			font-family: DM Serif Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 223.7%;
+
+			/* identical to box height, or 43px */
+			text-align: right;
+			text-decoration-line: line-through;
+
+			color: #4C6070;
+		}
+
+		
+		.card2{
+			position: absolute;
+			width: 306px;
+			height: 94px;
+			left: 22px;
+			top: 930px;
+
+			box-sizing: border-box;
+			border-radius: 8px;
+			background-color: #374B5B;
+			border: 2px solid #FFFFFF;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		}
+		.card2:hover {
+			  box-shadow: 0 4px 8px 0 rgba(228, 219, 219, 0.2)
+			  transition: 0.3s;
+			  background-color: #374B5B;
+			  border: 2px solid #FFFFFF;
+		}
+		.container21{
+			position: relative;
+			width: 208px;
+			height: 22px;
+			top: -55px;
+
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 136.2%;
+
+			/* identical to box height, or 22px */
+
+			color: #FFFFFF;
+		}
+		.container22{
+			position: absolute;
+			width: 206px;
+			height: 23px;
+			top: -25px;
+
+			font-family: Belgrano;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 193.7%;
+
+			/* or 23px */
+
+			color: #28333D;
+		}
+		.container23{
+			position: absolute;
+			width: 60px;
+			height: 16px;
+			top: 5px;
+
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 136.2%;
+
+			/* or 16px */
+
+			color: #24DB6D;
+		}
+		.container24{
+			position: absolute;
+			width: 41px;
+			height: 43px;
+			left: 230px;
+			top: -50px;
+
+			font-family: DM Serif Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 223.7%;
+
+			/* identical to box height, or 43px */
+			text-align: right;
+
+			color: #FFFFFF;
+		}
+		.container25{
+			position: absolute;
+			width: 42px;
+			height: 43px;
+			left: 230px;
+			top: -25px;
+
+			font-family: DM Serif Display;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 19px;
+			line-height: 223.7%;
+
+			/* identical to box height, or 43px */
+			text-align: right;
+			text-decoration-line: line-through;
+			color: #28333D;
+		}
+		.tick{
+			position: absolute;
+			bottom: 25%;
+			left: 300px;
+			right: 12.5%;
+			top: -20px;
+		}
+		.cartbtn{
+			position: absolute;
+			width: 327px;
+			height: 47px;
+			top: 115px;
+
+			background: #13324A;
+			box-shadow: 0px 1px 15px rgba(2, 2, 2, 0.04), inset 0px 0px 15px rgba(88, 88, 88, 0.3);
+			border: 0px;
+		}
+
+		.btnimg{
+			position: relative;
+			left: -4px;
+			right: 0%;
+			bottom: 8.33%;
+			top: 1px;
+		}
+		.btntxt{
+			
+			width: 101px;
+			height: 16px;
+			left: 149px;
+			top: 1166px;
+
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 16px;
+
+			/* identical to box height */
+			text-align: center;
+			letter-spacing: 0.045em;
+
+			color: #FFFFFF;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body >
+	<header>
+		<div>
+			<nav id="nav">
+				<a><img id="option" src="Icons_stt.png"></a>
+				<a><img id="cart" src="Icons_cart.png"></a>
+			</nav>
+		</div>
+	</header>
+	<div class="main">
+		<img id="imgmain" src="Group 331.png">
+	</div>
+	<div>
+		<p class="a">Everyday rinse and reload</p>
+		<p class="b">Achieve your dream skin goal with this complete package of skincare produts that will rejuvenate your day.</p>
+		<img id="ratings" src="Group 333.png">
+		<p><span class="c1"> ₹899 </span><span class="c2">₹1299 </span> </p>
+	</div>
+	<div class="card1">
+  		<div class="mp"><img id="star1" src="Path.png"><span class="mptext">Most Popular</span><img id="star2" src="Path.png"></div>
+  		<div class="container">
+    		<p class="container1">1 Months Pack (4 tubes)</p> 
+    		<p class="container2">Savings: ₹200</p>
+    		<p class="container3">38% Saved</p>
+    		<p class="container4">Best Results</p>
+    		<p class="container5">₹595</p>
+    		<p class="container6">₹795</p>
+ 
+
+  		</div>
+	</div>
+	<div class="card2">
+		<div class="container2">
+			<p class="container21">3 Months Pack (12 tubes)</p> 
+    		<p class="container22">Savings: ₹100</p>
+    		<p class="container23">12% Saved</p>
+    		<p class="container24">₹899</p>
+    		<p class="container25">₹999</p>
+    		<p class="tick"><img src="Mask_white.png"></p>
+	</div>
+	<button class="cartbtn" ><img class="btnimg" src="cartbtn.png"><span class="btntxt">ADD TO CART</span></button>
+
+</body>
+</html>
